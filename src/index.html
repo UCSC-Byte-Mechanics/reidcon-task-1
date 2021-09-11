@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .flex-container {
+          display: flex;
+          flex-wrap: nowrap;
+            
+        }
+        
+        .flex-container > div {
+          width: 100vh;
+          margin: 10px;
+          margin-left: 100px;
+          margin-right: 100px;
+          text-align: left;
+
+          
+        }
+
+        img{
+            width:100%;
+            height:100%;
+        }
+        </style>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+    <div class="flex-container">
+        <div>
+            <h1>Home</h1> 
+
+            <p>HTML markup consists of several key components, including those called tags (and their attributes), 
+            character-based data types, character references and entity references. HTML tags most commonly 
+            come in pairs like &lt;h1&gt; and &lt;/h1&gt; , although some recodesent empty elements and so are unpaired, for example &lt;img&gt; . The first 
+            tag in such a pair is the start tag, and the second is the end tag (they are also called opening 
+            tags and closing tags).
+            </p> 
+
+            <button type="button">Why HTML?</button>
+        
+        </div>
+        <div><img src="assets/images/hero.jpg"></div>
+      </div>
+
+      <div class="flex-container">
+          <div>
+            <h3>Sample Table</h3>
+            <p>Following table uses colspan and rowspan attributes inside &lt;td&gt; to merge two or more cells</p>
+
+            <table border="=1">
+                <tr>
+                    <th></th>
+                    <th>First Year</th>
+                    <th>Second Year</th>
+                    <th>Third Year</th>
+                    <th>Fourth Year</th>
+                </tr>
+                <tr>
+                    <td>8.00&nbsp;a.m&nbsp;-&nbsp;10.00&nbsp;a.m.</td>
+                    <td> Data&nbsp;Structures&nbsp;&&nbsp;Algorithms</td>
+                    <td> Software&nbsp;Engineering</td>
+                    <td>Mobile&nbsp;Apllication&nbsp;Development</td>
+                    <td>Parallel&nbsp;Computing</td>
+                </tr>
+                <tr>
+                    <td>10.00&nbsp;a.m&nbsp;-&nbsp;12.00&nbsp;a.m.</td>
+                    <td> Database</td>
+                    <td> Functional&nbsp;Programming</td>
+                    <td>Machine&nbsp;Learning</td>
+                    <td>Computational&nbsp;Biology</td>
+                </tr>
+                <tr>
+                    <td>12.00&nbsp;a.m&nbsp;-&nbsp;1.00&nbsp;p.m.</td>
+                    <td colspan="4"> Interval</td>
+                </tr>
+                <tr>
+                    <td>1.00&nbsp;p.m&nbsp;-&nbsp;3.00&nbsp;p.m.</td>
+                    <td> Mathematics</td>
+                    <td rowspan="2"> Group&nbsp;Project <ul><li>Previous Progress</li><li>Plan for next week</li></ul></td>
+                    <td>Game&nbsp;Development</td>
+                    <td>Cognitive&nbsp;Robotics</td>
+                </tr>
+                <tr>
+                    <td>3.00&nbsp;p.m&nbsp;-&nbsp;5.00&nbsp;p.m.</td>
+                    <td> Programming&nbsp;Using&nbsp;&&nbsp;C</td>
+                    <td>Management</td>
+                    <td>Philosphy&nbsp;of&nbsp;Science</td>
+                </tr>
+            </table>
+          </div>
+       
+      </div>
 
 </body>
 </html>
