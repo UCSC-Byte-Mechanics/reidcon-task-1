@@ -16,9 +16,15 @@
             padding: .1rem .3rem .2rem;
             border-radius: .5rem;
         }
-        .grid-container{
+        form{
             display: grid;
             grid-template-columns: auto auto;
+        }
+        .label{
+            grid-column: 1/2;
+        }
+        .input{
+            grid-column: 2/3;
         }
     </style>
 </head>
@@ -83,16 +89,55 @@
     </div>
 
     <h2>Sample Form</h2>
-    <div class="grid-container">
-        <form>
-            <label for="name">Name:</label><input type="text" id="name"><br>
-            <label for="email">Email:</label><input type="email" id="email"><br>
-            <label for="gender">Gender:</label>
+    <form>
+        <div class="label">
+            <label for="name">Name:</label>
+        </div>
+        <div class="input">
+            <input type="text" id="name"><br>
+        </div>
+        <div class="label">
+            <label for="email">Email:</label>
+        </div>
+        <div class="input">
+            <input type="email" id="email"><br>
+        </div>
+        <div class="label">
+            <label>Gender:</label>
+        </div>
+        <div class="input">
             <input type="radio" id="gender-male" name="gender"><label for="gender-male">Male</label>
             <input type="radio" id="gender-female" name="gender"><label for="gender-female">Female</label>
-
-        </form>
-    </div>
+        </div>
+        <div class="label">
+            <label>Academic Year:</label>
+        </div>
+        <div class="input">
+            <select name="academic-year">
+                <option value="2020/2021">2020/2021</option>
+                <option value="2019/2020">2019/2020</option>
+                <option value="2018/2019">2018/2019</option>
+                <option value="2016/2017">2016/2017</option>
+            </select>
+        </div>
+        <div class="label">
+            <label>Familiar in:</label>
+        </div>
+        <div class="input">
+            <input type="checkbox" id="html" name="HTML"><label for="html">HTML</label>
+            <input type="checkbox" id="css" name="CSS"><label for="css">HTML</label>
+            <input type="checkbox" id="js" name="JS"><label for="js">HTML</label>
+        </div>
+            <div class="label">
+            <label>Comment:</label>
+        </div>
+        <div class="input">
+            <textarea id="comment" name="comment" placeholder="Your Feedback"></textarea>
+        </div>
+        <div class="input">
+            <button type="submit">Submit</button>
+            <button type="Reset">Reset</button>
+        </div>
+    </form>
 </body>
 </html>
-&lt;h5&gt;
