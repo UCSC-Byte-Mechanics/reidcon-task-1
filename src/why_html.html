@@ -1,143 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
     <title>Why HTML</title>
-    <style>
-        .flex-container{
-            display: flex;
-            /*flex-direction: row;*/
-        }
-        .code_cell {
-            display: inline;
-            background: #e8e8e8;
-            word-wrap: break-word;
-            box-decoration-break: clone;
-            padding: .1rem .3rem .2rem;
-            border-radius: .5rem;
-        }
-        form{
-            display: grid;
-            grid-template-columns: auto auto;
-        }
-        .label{
-            grid-column: 1/2;
-        }
-        .input{
-            grid-column: 2/3;
-        }
-    </style>
 </head>
+
 <body>
-    <div class="flex-container">
-        <div>
+    <nav>
+        <ul>
+            <li><img src="assets/images/logo.png" alt=""></li>
+            <li class="fright"><a class="active" href="why_html.html">Why HTML?</a></li>
+            <li class="fright"><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <div class="padd"></div>
+
+    <div class="flex-container vcenter">
+        <div class="col2">
             <img src="assets/images/app.png" alt="HTML Development">
         </div>
-        <div>
+        <div class="col3">
             <h1>Why HTML?</h1>
 
             <div class="panel">
                 <hr>
                 <div class="panel-heading">
-                    HTML (Following Paragraph is Left Aligned)
+                    <b>HTML</b> (Following Paragraph is Left Aligned)
                 </div>
                 <hr>
-                <p class="panel-body">
-                    HTML is responsible of giving a semantic meaning for your content.<br>
-                    For example:<br>
+                <p class="panel-body left">
+                    HTML is responsible of giving a semantic meaning for your content.<br> For example:<br>
                     <ol>
-                        <li>Here is a <div class="code_cell">&lt;h5&gt;</div> <strong>title</strong>
-                            <div class="code_cell">&lt;/h5&gt;</div></li>
-                        <li>Followed by a <div class="code_cell">&lt;p&gt;</div> paragraph
-                            <div class="code_cell">&lt;/p&gt;</div></li>
+                        <li>Here is a
+                            <span class="code_cell">&lt;h5&gt;</span> <strong>title</strong>
+                            <span class="code_cell">&lt;/h5&gt;</span>
+                        </li>
+                        <li>Followed by a
+                            <span class="code_cell">&lt;p&gt;</span> paragraph
+                            <span class="code_cell">&lt;/p&gt;</span>
+                        </li>
                         <li>Then there's a footer [etc].</li>
                     </ol>
-                    Web browsers read it to display your content according to their importance (a title is bigger than a
-                    text, a <div class="code_cell">&lt;strong&gt;</div> <strong>"strong"</strong> <div class="code_cell">
-                    &lt;/strong&gt;</div> text is more important than a single text, etc). <div class="code_cell">
-                    &lt;tt&gt;</div> <tt>Crawlers</tt> <div class="code_cell">&lt;/tt&gt;</div>(like robots) use it to
-                    identify what content is relevant to their activity (i.e. google needs your page tilt show it to his page).
+                    Web browsers read it to display your content according to their importance (a title is bigger than a text, a
+                    <span class="code_cell">&lt;strong&gt;</span> <strong>"strong"</strong>
+                    <span class="code_cell">&lt;/strong&gt;</span> text is more important than a single text, etc).
+                    <span class="code_cell">&lt;tt&gt;</span> <tt>Crawlers</tt>
+                    <span class="code_cell">&lt;/tt&gt;</span>(like robots) use it to identify what content is relevant to their activity (i.e. google needs your page tilt show it to his page).
                 </p>
             </div>
 
             <div class="panel">
                 <hr>
                 <div class="panel-heading">
-                    CSS (Following Paragraph is Justified)
+                    <b>CSS</b> (Following Paragraph is Justified)
                 </div>
                 <hr>
-                <p class="panel-body">
+                <p class="panel-body justify">
                     CSS gives a style to your application. It's fundamentally destined to the user. It allows to say
-                    <div id="text_red">"this text is red"</div>, "this block is 200px wide", etc. It's "basically" not
-                    used by crawlers but it has some importance (some robot avoid to render a text it's hidden for
-                    example)
+                    <span id="text_red">"this text is red"</span>, "this block is 200px wide", etc. It's "basically" not used by crawlers but it has some importance (some robot avoid to render a text it's hidden for example)
                 </p>
             </div>
 
             <div class="panel">
                 <hr>
                 <div class="panel-heading">
-                    JavaScript (Following Paragraph is Right Aligned)
+                    <b>JavaScript</b> (Following Paragraph is right Aligned)
                 </div>
                 <hr>
-                <p class="panel-body">
-                    JavaScript, which is the only programming language of these 3, allows you to perform actions in real
-                    time (like showing a dialog when the user click button).
+                <p class="panel-body right">
+                    JavaScript, which is the only programming language of these 3, allows you to perform actions in real time (like showing a dialog when the user click button).
                 </p>
             </div>
         </div>
     </div>
+    <div class="padd2"></div>
 
-    <h2>Sample Form</h2>
-    <form>
-        <div class="label">
-            <label for="name">Name:</label>
+    <div class="flex-container hcenter">
+
+        <div class="row">
+            <h3 class="center">Sample Form</h3><br />
+
+            <form class="">
+                <div class="input">
+                    <label for="name">Name:</label>
+                    <input class="fright" type="text" placeholder="Name" id="name"><br>
+                </div>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input class="fright" type="email" placeholder="Email" id="email"><br>
+                </div>
+                <div class="input">
+                    <label>Gender:</label>
+                    <div class="fright">
+                        <input type="radio" id="gender-male" name="gender">Male &ensp; &ensp;
+                        <input type="radio" id="gender-female" name="gender">Female
+                    </div>
+                </div>
+                <div class="input">
+                    <label>Academic Year:</label>
+                    <select class="fright" name="academic-year">
+                        <option >Select from list</option>
+                        <option value="2020/2021">2020/2021</option>
+                        <option value="2019/2020">2019/2020</option>
+                        <option value="2018/2019">2018/2019</option>
+                        <option value="2016/2017">2016/2017</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Familiar in:</label>
+                    <div class="fright">
+                        <input type="checkbox" id="html" name="HTML">HTML &ensp;&ensp;&ensp;
+                        <input type="checkbox" id="css" name="CSS">CSS &ensp;&ensp;&ensp;
+                        <input type="checkbox" id="js" name="JS">JS
+                    </div>
+
+                </div>
+                <div class="input textarea">
+                    <label>Comment:</label>
+
+                    <textarea class="fright" name="comment" placeholder="Your Feedback"></textarea>
+                </div>
+                <div class="fright"> <button type="submit">Submit</button> &ensp;&ensp;&ensp;&ensp;
+                    <button class=" grey" type="Reset">Reset</button>
+                </div>
+
+            </form>
         </div>
-        <div class="input">
-            <input type="text" id="name"><br>
-        </div>
-        <div class="label">
-            <label for="email">Email:</label>
-        </div>
-        <div class="input">
-            <input type="email" id="email"><br>
-        </div>
-        <div class="label">
-            <label>Gender:</label>
-        </div>
-        <div class="input">
-            <input type="radio" id="gender-male" name="gender"><label for="gender-male">Male</label>
-            <input type="radio" id="gender-female" name="gender"><label for="gender-female">Female</label>
-        </div>
-        <div class="label">
-            <label>Academic Year:</label>
-        </div>
-        <div class="input">
-            <select name="academic-year">
-                <option value="2020/2021">2020/2021</option>
-                <option value="2019/2020">2019/2020</option>
-                <option value="2018/2019">2018/2019</option>
-                <option value="2016/2017">2016/2017</option>
-            </select>
-        </div>
-        <div class="label">
-            <label>Familiar in:</label>
-        </div>
-        <div class="input">
-            <input type="checkbox" id="html" name="HTML"><label for="html">HTML</label>
-            <input type="checkbox" id="css" name="CSS"><label for="css">HTML</label>
-            <input type="checkbox" id="js" name="JS"><label for="js">HTML</label>
-        </div>
-            <div class="label">
-            <label>Comment:</label>
-        </div>
-        <div class="input">
-            <textarea id="comment" name="comment" placeholder="Your Feedback"></textarea>
-        </div>
-        <div class="input">
-            <button type="submit">Submit</button>
-            <button type="Reset">Reset</button>
-        </div>
-    </form>
+    </div>
+    <div class="padd"></div>
 </body>
+
 </html>
