@@ -3,136 +3,142 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/styles/styles.css" rel="stylesheet">
 
     <title>Why HTML</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><img src="assets/images/logo.png" alt=""></li>
-            <li class="fright"><a class="active" href="why_html.html">Why HTML?</a></li>
-            <li class="fright"><a href="index.html">HOME</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><img alt="" src="assets/images/logo.png"></li>
+        <li class="float-r"><a class="active" href="why_html.html">Why HTML?</a></li>
+        <li class="float-r"><a href="index.html">HOME</a></li>
+    </ul>
+</nav>
 
-    <div class="padd"></div>
+<div class="p-50"></div>
 
-    <div class="flex-container vcenter">
-        <div class="col2">
-            <img src="assets/images/app.png" alt="HTML Development">
-        </div>
-        <div class="col3">
-            <h1>Why HTML?</h1>
-
-            <div class="panel">
-                <hr>
-                <div class="panel-heading">
-                    <b>HTML</b> (Following Paragraph is Left Aligned)
-                </div>
-                <hr>
-                <p class="panel-body left">
-                    HTML is responsible of giving a semantic meaning for your content.<br> For example:<br>
-                    <ol>
-                        <li>Here is a
-                            <span class="code_cell">&lt;h5&gt;</span> <strong>title</strong>
-                            <span class="code_cell">&lt;/h5&gt;</span>
-                        </li>
-                        <li>Followed by a
-                            <span class="code_cell">&lt;p&gt;</span> paragraph
-                            <span class="code_cell">&lt;/p&gt;</span>
-                        </li>
-                        <li>Then there's a footer [etc].</li>
-                    </ol>
-                    Web browsers read it to display your content according to their importance (a title is bigger than a text, a
-                    <span class="code_cell">&lt;strong&gt;</span> <strong>"strong"</strong>
-                    <span class="code_cell">&lt;/strong&gt;</span> text is more important than a single text, etc).
-                    <span class="code_cell">&lt;tt&gt;</span> <tt>Crawlers</tt>
-                    <span class="code_cell">&lt;/tt&gt;</span>(like robots) use it to identify what content is relevant to their activity (i.e. google needs your page tilt show it to his page).
-                </p>
-            </div>
-
-            <div class="panel">
-                <hr>
-                <div class="panel-heading">
-                    <b>CSS</b> (Following Paragraph is Justified)
-                </div>
-                <hr>
-                <p class="panel-body justify">
-                    CSS gives a style to your application. It's fundamentally destined to the user. It allows to say
-                    <span id="text_red">"this text is red"</span>, "this block is 200px wide", etc. It's "basically" not used by crawlers but it has some importance (some robot avoid to render a text it's hidden for example)
-                </p>
-            </div>
-
-            <div class="panel">
-                <hr>
-                <div class="panel-heading">
-                    <b>JavaScript</b> (Following Paragraph is right Aligned)
-                </div>
-                <hr>
-                <p class="panel-body right">
-                    JavaScript, which is the only programming language of these 3, allows you to perform actions in real time (like showing a dialog when the user click button).
-                </p>
-            </div>
-        </div>
+<section class="why-html-section flex-container v-center">
+    <div class="image col-2">
+        <img alt="HTML Development" src="assets/images/app.png">
     </div>
-    <div class="padd2"></div>
+    <article class="text col-2">
+        <h1>Why HTML?</h1>
 
-    <div class="flex-container hcenter">
-
-        <div class="row">
-            <h3 class="center">Sample Form</h3><br />
-
-            <form class="">
-                <div class="input">
-                    <label for="name">Name:</label>
-                    <input class="fright" type="text" placeholder="Name" id="name"><br>
-                </div>
-                <div class="input">
-                    <label for="email">Email:</label>
-                    <input class="fright" type="email" placeholder="Email" id="email"><br>
-                </div>
-                <div class="input">
-                    <label>Gender:</label>
-                    <div class="fright">
-                        <input type="radio" id="gender-male" name="gender">Male &ensp; &ensp;
-                        <input type="radio" id="gender-female" name="gender">Female
-                    </div>
-                </div>
-                <div class="input">
-                    <label>Academic Year:</label>
-                    <select class="fright" name="academic-year">
-                        <option >Select from list</option>
-                        <option value="2020/2021">2020/2021</option>
-                        <option value="2019/2020">2019/2020</option>
-                        <option value="2018/2019">2018/2019</option>
-                        <option value="2016/2017">2016/2017</option>
-                    </select>
-                </div>
-                <div class="input">
-                    <label>Familiar in:</label>
-                    <div class="fright">
-                        <input type="checkbox" id="html" name="HTML">HTML &ensp;&ensp;&ensp;
-                        <input type="checkbox" id="css" name="CSS">CSS &ensp;&ensp;&ensp;
-                        <input type="checkbox" id="js" name="JS">JS
-                    </div>
-
-                </div>
-                <div class="input textarea">
-                    <label>Comment:</label>
-
-                    <textarea class="fright" name="comment" placeholder="Your Feedback"></textarea>
-                </div>
-                <div class="fright"> <button type="submit">Submit</button> &ensp;&ensp;&ensp;&ensp;
-                    <button class=" grey" type="Reset">Reset</button>
-                </div>
-
-            </form>
+        <div class="panel">
+            <hr>
+            <div class="panel-heading">
+                <b>HTML</b> (Following Paragraph is Left Aligned)
+            </div>
+            <hr>
+            <p class="panel-body left">
+                HTML is responsible of giving a semantic meaning for your content.<br> For example:<br>
+            <ol>
+                <li>Here is a
+                    <code class="code_cell">&lt;h5&gt;</code> <strong>title</strong>
+                    <code class="code_cell">&lt;/h5&gt;</code>
+                </li>
+                <li>Followed by a
+                    <code class="code_cell">&lt;p&gt;</code> paragraph
+                    <code class="code_cell">&lt;/p&gt;</code>
+                </li>
+                <li>Then there's a footer [etc].</li>
+            </ol>
+            <p class="left">Web browsers read it to display your content according to their importance (a title is
+                bigger than a text, a
+                <code class="code_cell">&lt;strong&gt;</code> <strong>"strong"</strong>
+                <code class="code_cell">&lt;/strong&gt;</code> text is more important than a single text, etc).
+                <code class="code_cell">&lt;tt&gt;</code> <tt>Crawlers</tt>
+                <code class="code_cell">&lt;/tt&gt;</code>(like robots) use it to identify what content is relevant to
+                their
+                activity (i.e. google needs your page tilt show it to his page).
+            </p>
         </div>
+
+        <div class="panel">
+            <hr>
+            <div class="panel-heading">
+                <b>CSS</b> (Following Paragraph is Justified)
+            </div>
+            <hr>
+            <p class="panel-body justify">
+                CSS gives a style to your application. It's fundamentally destined to the user. It allows to say
+                <span id="text_red">"this text is red"</span>, "this block is 200px wide", etc. It's "basically" not
+                used by crawlers but it has some importance (some robot avoid to render a text it's hidden for example)
+            </p>
+        </div>
+
+        <div class="panel">
+            <hr>
+            <div class="panel-heading">
+                <b>JavaScript</b> (Following Paragraph is right Aligned)
+            </div>
+            <hr>
+            <p class="panel-body right">
+                JavaScript, which is the only programming language of these 3, allows you to perform actions in real
+                time (like showing a dialog when the user click button).
+            </p>
+        </div>
+    </article>
+</section>
+<div class="p-25"></div>
+
+<section class="form-section flex-container h-center">
+
+    <div class="row">
+        <h3 class="center form-title">Sample Form</h3><br/>
+
+        <form class="">
+            <div class="input">
+                <label for="name">Name:</label>
+                <input class="float-r" id="name" placeholder="Name" type="text"><br>
+            </div>
+            <div class="input">
+                <label for="email">Email:</label>
+                <input class="float-r" id="email" placeholder="Email Address" type="email"><br>
+            </div>
+            <div class="input">
+                <label>Gender:</label>
+                <div class="float-r">
+                    <input id="gender-male" name="gender" type="radio">&nbsp;Male &ensp; &ensp;
+                    <input id="gender-female" name="gender" type="radio">&nbsp;Female
+                </div>
+            </div>
+            <div class="input">
+                <label>Academic Year:</label>
+                <select class="float-r" name="academic-year">
+                    <option>Select from list</option>
+                    <option value="2020/2021">2020/2021</option>
+                    <option value="2019/2020">2019/2020</option>
+                    <option value="2018/2019">2018/2019</option>
+                    <option value="2016/2017">2016/2017</option>
+                </select>
+            </div>
+            <div class="input">
+                <label>Familiar in:</label>
+                <div class="float-r">
+                    <input id="html" name="HTML" type="checkbox">&ensp;HTML &ensp;&ensp;&ensp;
+                    <input id="css" name="CSS" type="checkbox">&ensp;CSS &ensp;&ensp;&ensp;
+                    <input id="js" name="JS" type="checkbox">&ensp;JS
+                </div>
+
+            </div>
+            <div class="input textarea">
+                <label>Comment:</label>
+
+                <textarea class="float-r" name="comment" placeholder="Your Feedback"></textarea>
+            </div>
+            <div class="form-buttons float-r">
+                <button type="submit">Submit</button> &ensp;&ensp;&ensp;&ensp;
+                <button class="secondary" type="Reset">Reset</button>
+            </div>
+
+        </form>
     </div>
-    <div class="padd"></div>
+</section>
+<div class="p-50"></div>
 </body>
 
 </html>
