@@ -454,6 +454,32 @@ ol {
     textarea {
         height: 140px;
     }
+    table {
+        font-size: 3vw;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    .table {
+        width: 100%;
+        overflow-x: scroll;
+        padding: 0;
+    }
+    .fixed-column {
+        z-index: 1;
+        position: sticky;
+        width: 5em;
+        left: 0px;
+        top: auto;
+    }
+    tr:nth-child(odd) .fixed-column {
+        background: #eee;
+    }
+    tr:nth-child(even) .fixed-column {
+        background: #fff;
+    }
+    tr:first-child th.fixed-column {
+        background: #4E598C;
+    }
 }
 
 
