@@ -11,94 +11,89 @@
 </head>
 
 <body>
-<nav>
-    <ul>
-        <li><img alt="" src="assets/images/logo.png"></li>
-        <li class="float-r"><a href="why_html.html">Why HTML?</a></li>
-        <li class="float-r"><a class="active" href="index.html">Home</a></li>
-    </ul>
-</nav>
-<section class="home-section flex-container" id="home">
-    <article class="col-1 text">
-        <h1>HOME</h1>
+    <nav>
+        <ul>
+            <li><img alt="" src="assets/images/logo.png"></li>
+            <li class="float-r"><a href="why_html.html">Why HTML?</a></li>
+            <li class="float-r"><a class="active" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <section class="home-section flex-container" id="home">
+        <article class="col-1 text">
+            <h1>HOME</h1>
 
-        <p>HTML markup consists of several key components, including those called tags (and their attributes),
-            character-based data types, character references and entity references. HTML tags most commonly come in
-            pairs like <code class="code_cell">&lt;h1&gt;</code> and <code class="code_cell">&lt;/h1&gt;</code> ,
-            although some recodesent empty elements and so are unpaired, for example <code
-                    class="code_cell">&lt;img&gt;</code> . The first tag in such a pair is the start tag, and the second
-            is the
-            end tag (they are also called <i>opening tags</i> and <i>closing tags</i>).
-        </p>
+            <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like <code class="code_cell">&lt;h1&gt;</code>                and <code class="code_cell">&lt;/h1&gt;</code> , although some recodesent empty elements and so are unpaired, for example <code class="code_cell">&lt;img&gt;</code> . The first tag in such a pair is the start tag, and the second is the
+                end tag (they are also called <i>opening tags</i> and <i>closing tags</i>).
+            </p>
 
-        <a class="active" href="why_html.html">
-            <button type="button">Why HTML?</button>
-        </a>
+            <a class="active" href="why_html.html">
+                <button type="button">Why HTML?</button>
+            </a>
 
-    </article>
-    <div class="col-1 image"><img src="assets/images/hero.jpg"></div>
-</section>
+        </article>
+        <div class="col-1 image"><img src="assets/images/hero.jpg"></div>
+    </section>
 
-<div class="p-25"></div>
+    <div class="p-25"></div>
 
-<section class="table-section flex-container h-center">
-    <div class="col-1">
-        <div class="row">
-            <h3>Sample Table</h3>
-            <p>Following table uses <code class="code_cell">colspan</code> and <code class="code_cell">rowspan</code>
-                attributes inside <code class="code_cell">&lt;td&gt;</code> to merge two or more cells</p>
+    <section class="table-section flex-container h-center">
+        <div class="col-1">
+            <div class="row">
+                <h3>Sample Table</h3>
+                <p>Following table uses <code class="code_cell">colspan</code> and <code class="code_cell">rowspan</code> attributes inside <code class="code_cell">&lt;td&gt;</code> to merge two or more cells</p>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th class="fixed-column"></th>
+                            <th>First Year</th>
+                            <th>Second Year</th>
+                            <th>Third Year</th>
+                            <th>Fourth Year</th>
+                        </tr>
+                        <tr>
+                            <td class="fixed-column"> 8.00&nbsp;a.m&nbsp;-&nbsp;10.00&nbsp;a.m.</td>
+                            <td> Data&nbsp;Structures&nbsp;&&nbsp;Algorithms</td>
+                            <td> Software&nbsp;Engineering</td>
+                            <td>Mobile&nbsp;Apllication&nbsp;Development</td>
+                            <td>Parallel&nbsp;Computing</td>
+                        </tr>
+                        <tr>
+                            <td class="fixed-column">10.00&nbsp;a.m&nbsp;-&nbsp;12.00&nbsp;a.m.</td>
+                            <td> Database</td>
+                            <td> Functional&nbsp;Programming</td>
+                            <td>Machine&nbsp;Learning</td>
+                            <td>Computational&nbsp;Biology</td>
+                        </tr>
+                        <tr>
+                            <td class="fixed-column">12.00&nbsp;a.m&nbsp;-&nbsp;1.00&nbsp;p.m.</td>
+                            <td class="center" colspan="4"> Interval</td>
+                        </tr>
+                        <tr>
+                            <td class="fixed-column">1.00&nbsp;p.m&nbsp;-&nbsp;3.00&nbsp;p.m.</td>
+                            <td> Mathematics</td>
+                            <td rowspan="2"> Group&nbsp;Project
+                                <ul>
+                                    <li>Previous Progress</li>
+                                    <li>Plan for next week</li>
+                                </ul>
+                            </td>
+                            <td>Game&nbsp;Development</td>
+                            <td>Cognitive&nbsp;Robotics</td>
+                        </tr>
+                        <tr>
+                            <td class="fixed-column">3.00&nbsp;p.m&nbsp;-&nbsp;5.00&nbsp;p.m.</td>
+                            <td> Programming&nbsp;Using&nbsp;&&nbsp;C</td>
+                            <td>Management</td>
+                            <td>Philosphy&nbsp;of&nbsp;Science</td>
+                        </tr>
+                    </table>
 
-            <table>
-                <tr>
-                    <th></th>
-                    <th>First Year</th>
-                    <th>Second Year</th>
-                    <th>Third Year</th>
-                    <th>Fourth Year</th>
-                </tr>
-                <tr>
-                    <td>8.00&nbsp;a.m&nbsp;-&nbsp;10.00&nbsp;a.m.</td>
-                    <td> Data&nbsp;Structures&nbsp;&&nbsp;Algorithms</td>
-                    <td> Software&nbsp;Engineering</td>
-                    <td>Mobile&nbsp;Apllication&nbsp;Development</td>
-                    <td>Parallel&nbsp;Computing</td>
-                </tr>
-                <tr>
-                    <td>10.00&nbsp;a.m&nbsp;-&nbsp;12.00&nbsp;a.m.</td>
-                    <td> Database</td>
-                    <td> Functional&nbsp;Programming</td>
-                    <td>Machine&nbsp;Learning</td>
-                    <td>Computational&nbsp;Biology</td>
-                </tr>
-                <tr>
-                    <td>12.00&nbsp;a.m&nbsp;-&nbsp;1.00&nbsp;p.m.</td>
-                    <td class="center" colspan="4"> Interval</td>
-                </tr>
-                <tr>
-                    <td>1.00&nbsp;p.m&nbsp;-&nbsp;3.00&nbsp;p.m.</td>
-                    <td> Mathematics</td>
-                    <td rowspan="2"> Group&nbsp;Project
-                        <ul>
-                            <li>Previous Progress</li>
-                            <li>Plan for next week</li>
-                        </ul>
-                    </td>
-                    <td>Game&nbsp;Development</td>
-                    <td>Cognitive&nbsp;Robotics</td>
-                </tr>
-                <tr>
-                    <td>3.00&nbsp;p.m&nbsp;-&nbsp;5.00&nbsp;p.m.</td>
-                    <td> Programming&nbsp;Using&nbsp;&&nbsp;C</td>
-                    <td>Management</td>
-                    <td>Philosphy&nbsp;of&nbsp;Science</td>
-                </tr>
-            </table>
-
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<div class="p-50"></div>
+    <div class="p-50"></div>
 </body>
 
 </html>
