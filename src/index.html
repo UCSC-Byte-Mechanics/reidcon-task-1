@@ -3,22 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="Basic Website using HTML/CSS for ReidCon HOW Series" name="description">
+    <meta content="Basic website using HTML/CSS for ReidCon HOW series - Task 1" name="description">
     <meta content="UCSC, ReidCon, Web Development, HTML, CSS, Introduction to HTML" name="keywords">
     <meta content="Abdullah Jasmin, Ravindu Wegiriya, Ramindu Walgama, Sandul Renuja, Samadhi Anuththara" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="assets/images/logo.png" rel="icon" sizes="16x16" type="image/png">
+    <meta content=”index” name=”robots”>
 
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta content="https://github.com/UCSC-Byte-Mechanics/reidcon-task-1/index.html" property="og:url"/>
+    <meta content="article" property="og:type"/>
+    <meta content="Reidcon HOW Series - Task 1" property="og:title"/>
+    <meta content="Basic website made using HTML/CSS for Reidcon by Team Byte Mechanics" property="og:description"/>
+    <meta content="assets/images/logo.png" property="og:image"/>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link href="assets/styles/styles.css" rel="stylesheet">
 
-    <title>HOW Series</title>
+    <!-- Favicons -->
+    <link href="assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+
+    <title>Reidcon HOW Series - Task 1</title>
 </head>
 
 <body>
 <nav>
     <ul>
-        <li><img alt="" src="assets/images/logo.png"></li>
-        <li class="float-r"><a href="why_html.html">Why HTML?</a></li>
+        <li><img alt="Reidcon logo" height="60" src="assets/images/logo.png"></li>
+        <li class="float-r"><a href="why-html.html">Why HTML?</a></li>
         <li class="float-r"><a class="active">Home</a></li>
     </ul>
 </nav>
@@ -31,16 +49,14 @@
             pairs like <code class="code_cell">&lt;h1&gt;</code> and <code class="code_cell">&lt;/h1&gt;</code> ,
             although some recodesent empty elements and so are unpaired, for example <code
                     class="code_cell">&lt;img&gt;</code> . The first tag in such a pair is the start tag, and the second
-            is the
-            end tag (they are also called <i>opening tags</i> and <i>closing tags</i>).
+            is the end tag (they are also called <i>opening tags</i> and <i>closing tags</i>).
         </p>
 
-        <a class="active" href="why_html.html">
+        <a class="active" href="why-html.html" rel="prefetch">
             <button type="button">Why HTML?</button>
         </a>
-
     </article>
-    <div class="col-1 image"><img src="assets/images/hero.jpg"></div>
+    <figure class="col-1 image"><img alt="HTML code on a laptop" src="assets/images/hero.jpg"></figure>
 </section>
 
 <div class="p-25"></div>
@@ -61,16 +77,16 @@
                         <th>Fourth Year</th>
                     </tr>
                     <tr>
-                        <td class="fixed-column"> 8.00&nbsp;a.m&nbsp;-&nbsp;10.00&nbsp;a.m.</td>
-                        <td> Data&nbsp;Structures&nbsp;&&nbsp;Algorithms</td>
-                        <td> Software&nbsp;Engineering</td>
-                        <td>Mobile&nbsp;Apllication&nbsp;Development</td>
+                        <td class="fixed-column">8.00&nbsp;a.m&nbsp;-&nbsp;10.00&nbsp;a.m.</td>
+                        <td>Data&nbsp;Structures&nbsp;&&nbsp;Algorithms</td>
+                        <td>Software&nbsp;Engineering</td>
+                        <td>Mobile&nbsp;Application&nbsp;Development</td>
                         <td>Parallel&nbsp;Computing</td>
                     </tr>
                     <tr>
                         <td class="fixed-column">10.00&nbsp;a.m&nbsp;-&nbsp;12.00&nbsp;a.m.</td>
-                        <td> Database</td>
-                        <td> Functional&nbsp;Programming</td>
+                        <td>Database</td>
+                        <td>Functional&nbsp;Programming</td>
                         <td>Machine&nbsp;Learning</td>
                         <td>Computational&nbsp;Biology</td>
                     </tr>
@@ -92,12 +108,11 @@
                     </tr>
                     <tr>
                         <td class="fixed-column">3.00&nbsp;p.m&nbsp;-&nbsp;5.00&nbsp;p.m.</td>
-                        <td> Programming&nbsp;Using&nbsp;&&nbsp;C</td>
+                        <td>Programming&nbsp;Using&nbsp;&&nbsp;C</td>
                         <td>Management</td>
-                        <td>Philosphy&nbsp;of&nbsp;Science</td>
+                        <td>Philosophy&nbsp;of&nbsp;Science</td>
                     </tr>
                 </table>
-
             </div>
         </div>
     </div>

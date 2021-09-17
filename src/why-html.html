@@ -3,17 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta content="Basic website using HTML/CSS for ReidCon HOW series - Task 1" name="description">
+    <meta content="UCSC, ReidCon, Web Development, HTML, CSS, Introduction to HTML" name="keywords">
+    <meta content="Abdullah Jasmin, Ravindu Wegiriya, Ramindu Walgama, Sandul Renuja, Samadhi Anuththara" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="assets/styles/styles.css" rel="stylesheet">
-    <link href="assets/images/logo.png" rel="icon" sizes="16x16" type="image/png">
+    <meta content=”index” name=”robots”>
 
-    <title>Why HTML</title>
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta content="https://github.com/UCSC-Byte-Mechanics/reidcon-task-1/why-html.html" property="og:url"/>
+    <meta content="article" property="og:type"/>
+    <meta content="Why HTML?" property="og:title"/>
+    <meta content="Basic website made using HTML/CSS for Reidcon by Team Byte Mechanics" property="og:description"/>
+    <meta content="assets/images/logo.png" property="og:image"/>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link href="assets/styles/styles.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link href="assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+
+    <title>Why HTML?</title>
 </head>
 
 <body>
 <nav>
     <ul>
-        <li><img alt="" src="assets/images/logo.png"></li>
+        <li><img alt="Reidcon logo" height="60" src="assets/images/logo.png"></li>
         <li class="float-r"><a class="active">Why HTML?</a></li>
         <li class="float-r"><a href="index.html">HOME</a></li>
     </ul>
@@ -21,7 +43,7 @@
 
 <section class="why-html-section flex-container v-center">
     <div class="image col-2">
-        <img alt="HTML Development" src="assets/images/app.png">
+        <img alt="Mobile app and users vector illustration" src="assets/images/app.png">
     </div>
     <article class="text col-2">
         <h1>Why HTML?</h1>
@@ -29,11 +51,11 @@
         <div class="panel">
             <hr>
             <div class="panel-heading">
-                <b> <tt>HTML</tt> </b>(Following Paragraph is Left Aligned)
+                <b> <code>HTML</code> </b>(Following Paragraph is Left Aligned)
             </div>
             <hr>
             <p class="panel-body left">
-                HTML is responsible of giving a semantic meaning for your content.<br> For example:<br>
+                HTML is responsible for giving a semantic meaning for your content.<br> For example:<br>
             <ol>
                 <li>Here is a
                     <code class="code_cell">&lt;h5&gt;</code> <strong>title</strong>
@@ -43,35 +65,35 @@
                     <code class="code_cell">&lt;p&gt;</code> paragraph
                     <code class="code_cell">&lt;/p&gt;</code>
                 </li>
-                <li>Then there's a footer [etc].</li>
+                <li>Then there's a footer [etc.]</li>
             </ol>
             <p class="left">Web browsers read it to display your content according to their importance (a title is
                 bigger than a text, a
                 <code class="code_cell">&lt;strong&gt;</code> <strong>"strong"</strong>
                 <code class="code_cell">&lt;/strong&gt;</code> text is more important than a single text, etc).
-                <code class="code_cell">&lt;tt&gt;</code> <tt>Crawlers</tt>
+                <code class="code_cell">&lt;tt&gt;</code> <code>Crawlers</code>
                 <code class="code_cell">&lt;/tt&gt;</code>(like robots) use it to identify what content is relevant to
-                their activity (i.e. google needs your page tilt show it to his page).
+                their activity (i.e. Google needs your page tilt show it to his page).
             </p>
         </div>
 
         <div class="panel">
             <hr>
             <div class="panel-heading">
-                <b> <tt>CSS</tt> </b> (Following Paragraph is Justified)
+                <b> <code>CSS</code> </b> (Following Paragraph is Justified)
             </div>
             <hr>
             <p class="panel-body justify">
                 CSS gives a style to your application. It's fundamentally destined to the user. It allows to say
                 <span class="red-t">"this text is red"</span>, "this block is 200px wide", etc. It's "basically" not
-                used by crawlers but it has some importance (some robot avoid to render a text it's hidden for example)
+                used by crawlers, but it has some importance (some robot avoid to render a text it's hidden for example)
             </p>
         </div>
 
         <div class="panel">
             <hr>
             <div class="panel-heading">
-                <b> <tt>JavaScript</tt> </b> (Following Paragraph is right Aligned)
+                <b> <code>JavaScript</code> </b> (Following Paragraph is right Aligned)
             </div>
             <hr>
             <p class="panel-body right">
@@ -88,7 +110,7 @@
     <div class="row">
         <h3 class="center form-title">Sample Form</h3><br/>
 
-        <form class="">
+        <form>
             <div class="input">
                 <label for="name">Name:</label>
                 <input class="float-r" id="name" placeholder="Name" type="text"><br>
@@ -118,22 +140,20 @@
             <div class="input">
                 <label>Familiar in:</label>
                 <div class="float-r">
-                    <input id="html" name="HTML" type="checkbox">&ensp; <label for="html">HTML</label> &ensp;&ensp;&ensp;
-                    <input id="css" name="CSS" type="checkbox">&ensp;<label for="css">CSS</label> &ensp;&ensp;&ensp;
-                    <input id="js" name="JS" type="checkbox">&ensp;<label for="js">JS</label>
+                    <input id="option-html" name="HTML" type="checkbox">&ensp; <label for="option-html">HTML</label>
+                    <input id="option-css" name="CSS" type="checkbox">&ensp;<label for="option-css">CSS</label> &ensp;&ensp;&ensp;
+                    <input id="option-js" name="JS" type="checkbox">&ensp;<label for="option-js">JS</label>
                 </div>
 
             </div>
             <div class="input textarea">
-                <label>Comment:</label>
-
-                <textarea class="float-r" name="comment" placeholder="Your Feedback"></textarea>
+                <label for="your-feedback">Comment:</label>
+                <textarea class="float-r" id="your-feedback" name="comment" placeholder="Your Feedback"></textarea>
             </div>
             <div class="form-buttons float-r">
                 <button type="submit">Submit</button> &ensp;&ensp;&ensp;&ensp;
                 <button class="secondary" type="Reset">Reset</button>
             </div>
-
         </form>
     </div>
 </section>
