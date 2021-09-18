@@ -1,7 +1,12 @@
-# reidcon-task-1
+# Reidcon HOW Series - Task 1
+<hr>
 
-Hello world
+*Basic website using HTML/CSS for ReidCon HOW series - Task 1*
 
-Hello Guys
+By Team Byte Mechanics:
 
-Hi everyone
+Abdullah Jasmin
+Ravindu Wegiriya
+Ramindu Walgama
+Sandul Renuja
+Samadhi Anuththara
