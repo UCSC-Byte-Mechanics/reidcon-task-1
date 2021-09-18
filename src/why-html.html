@@ -33,19 +33,19 @@
 </head>
 
 <body>
-<nav>
+<nav class="fadeInTop">
     <ul>
         <li><img alt="Reidcon logo" height="60" src="assets/images/logo.png"></li>
         <li class="float-r"><a class="active">Why HTML?</a></li>
-        <li class="float-r"><a href="index.html">HOME</a></li>
+        <li class="float-r"><a href="index.html" rel="prefetch">HOME</a></li>
     </ul>
 </nav>
 
 <section class="why-html-section flex-container v-center">
-    <div class="image col-2">
+    <figure class="image col-2 fadeInLeft">
         <img alt="Mobile app and users vector illustration" src="assets/images/app.png">
-    </div>
-    <article class="text col-2">
+    </figure>
+    <article class="text col-2 fadeInRight">
         <h1>Why HTML?</h1>
 
         <div class="panel">
@@ -58,21 +58,21 @@
                 HTML is responsible for giving a semantic meaning for your content.<br> For example:<br>
             <ol>
                 <li>Here is a
-                    <code class="code_cell">&lt;h5&gt;</code> <strong>title</strong>
-                    <code class="code_cell">&lt;/h5&gt;</code>
+                    <code class="code-cell">&lt;h5&gt;</code> <strong>title</strong>
+                    <code class="code-cell">&lt;/h5&gt;</code>
                 </li>
                 <li>Followed by a
-                    <code class="code_cell">&lt;p&gt;</code> paragraph
-                    <code class="code_cell">&lt;/p&gt;</code>
+                    <code class="code-cell">&lt;p&gt;</code> paragraph
+                    <code class="code-cell">&lt;/p&gt;</code>
                 </li>
                 <li>Then there's a footer [etc.]</li>
             </ol>
             <p class="left">Web browsers read it to display your content according to their importance (a title is
                 bigger than a text, a
-                <code class="code_cell">&lt;strong&gt;</code> <strong>"strong"</strong>
-                <code class="code_cell">&lt;/strong&gt;</code> text is more important than a single text, etc).
-                <code class="code_cell">&lt;tt&gt;</code> <code>Crawlers</code>
-                <code class="code_cell">&lt;/tt&gt;</code>(like robots) use it to identify what content is relevant to
+                <code class="code-cell">&lt;strong&gt;</code> <strong>"strong"</strong>
+                <code class="code-cell">&lt;/strong&gt;</code> text is more important than a single text, etc).
+                <code class="code-cell">&lt;tt&gt;</code> <code>Crawlers</code>
+                <code class="code-cell">&lt;/tt&gt;</code>(like robots) use it to identify what content is relevant to
                 their activity (i.e. Google needs your page tilt show it to his page).
             </p>
         </div>
@@ -105,7 +105,7 @@
 </section>
 <div class="p-25"></div>
 
-<section class="form-section flex-container h-center">
+<section class="form-section flex-container h-center fadeInBottom">
 
     <div class="row">
         <h3 class="center form-title">Sample Form</h3><br/>
@@ -113,11 +113,11 @@
         <form>
             <div class="input">
                 <label for="name">Name:</label>
-                <input class="float-r" id="name" placeholder="Name" type="text"><br>
+                <input class="float-r" id="name" placeholder="Name" required type="text"><br>
             </div>
             <div class="input">
                 <label for="email">Email:</label>
-                <input class="float-r" id="email" placeholder="Email Address" type="email"><br>
+                <input class="float-r" id="email" placeholder="Email Address" required type="email"><br>
             </div>
             <div class="input">
                 <label>Gender:</label>
@@ -129,7 +129,7 @@
             </div>
             <div class="input">
                 <label for="year">Academic Year:</label>
-                <select class="float-r" id="year" name="academic-year">
+                <select class="float-r" id="year" name="academic-year" required>
                     <option>Select from list</option>
                     <option value="2020/2021">2020/2021</option>
                     <option value="2019/2020">2019/2020</option>
@@ -148,7 +148,8 @@
             </div>
             <div class="input textarea">
                 <label for="your-feedback">Comment:</label>
-                <textarea class="float-r" id="your-feedback" name="comment" placeholder="Your Feedback"></textarea>
+                <textarea class="float-r" id="your-feedback" name="comment" placeholder="Your Feedback"
+                          required></textarea>
             </div>
             <div class="form-buttons float-r">
                 <button type="submit">Submit</button> &ensp;&ensp;&ensp;&ensp;
